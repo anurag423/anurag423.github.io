@@ -12,8 +12,9 @@
 }
 
 body {
-  background: var(--grey-color);
+  background: var(--dark-color);
   color: #f06160;
+  z-index: 1;
 }
 
 ul {
@@ -27,14 +28,16 @@ a:visited {
 
 /* Header */
 .header {
+  margin: 2.5rem 0;
   width: 100%;
-  height: 20vh;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
+  z-index: 2;
 }
 
 .btn {
@@ -51,6 +54,23 @@ a:visited {
 
 .header a:hover {
   background: #ffa251;
+  color: #fff;
+}
+
+/* Showcase */
+
+.showcase.background {
+  width: 100%;
+  height: 36rem;
+  background: url(./images/programming-1873854_1920.png) no-repeat center
+    center/cover;
+}
+
+.showcase-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
   color: #fff;
 }
 
