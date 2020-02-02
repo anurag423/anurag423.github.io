@@ -87,7 +87,13 @@ a:visited {
   transform: translate(-50%, -50%);
   color: #fff;
 }
+/* Grid */
 
+.grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 200px
+}
 /* Text */
 
 .text-xl {
@@ -106,6 +112,7 @@ a:visited {
 }
 
 /* Media Queries */
+
 @media screen and (max-width: 1110px) {
   .header {
     margin: 0 0;
@@ -125,6 +132,7 @@ a:visited {
     align-items: center;
   }
   .showcase.background::after {
-    box-shadow: inset 0px 0px 100px 10px #141413, inset 0px 0px 100px 5px #141414;
+    box-shadow: inset 0px 0px 100px 10px #141413,
+      inset 0px 0px 100px 5px #141414;
   }
 }
