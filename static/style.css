@@ -3,6 +3,13 @@
   padding: 0;
   font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body {
@@ -18,12 +25,13 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+
   background-position: center;
   background-size: cover;
 }
 
 .container {
-  z-index: 2;
+  z-index: 1;
   box-shadow: inset 0px 0px 200px 100px #141414,
     inset 0px 0px 200px 50px #141414;
 }
@@ -33,40 +41,50 @@ div {
 }
 
 .wrapper.pg1 {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* https://coolors.co/000000-c8c5c1-065a82-82c3fb-8c5f66 */
 #pg1 {
-  background-image: url(../static/programming-1873854_1920.png);
-  color: white;
+  background-image: url(../static/imgs/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
 }
 #pg2 {
-  background-image: url(../static/purdue.jpg);
+  background-image: url(../static/imgs/purdue.jpg);
 }
 
 #pg3 {
-  background: #065a82;
+  /* background: #065a82; */
+  background-image: url(../static/imgs/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
 }
 
 #pg4 {
-  background-image: url(../static/canyon.jpeg);
+  background-image: url(../static/imgs/nikola-majksner-hXNGeAFOgT4-unsplash.jpg);
 }
 #pg5 {
-  background: #8c5f66;
+  background-image: url(../static/imgs/tom-gainor-ZqLeQDjY6fY-unsplash.jpg);
 }
 
 .parallax {
   background-attachment: scroll;
 }
 
-.foot {
-  height: 5vh;
-  background-color: white;
-  color: black;
-  font-size: 2vh;
+.lg {
+  font-size: 4rem;
+}
+.nav {
+  position: fixed;
+  justify-content: flex-end;
+  z-index: 2;
 }
 
+.nav ul {
+  list-style-type: none;
+  text-align: right;
+  color: white;
+}
+*/ .nav {
+  justify-content: flex-end;
+}
 @media screen and (max-width: 1110px) {
   .wrapper.pg1 {
     box-shadow: inset 0px 0px 100px 10px #141414,
