@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: pink;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+
+div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  z-index: 2;
+  box-shadow: inset 0px 0px 200px 100px #141414,
+    inset 0px 0px 200px 50px #141414;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper.pg1 {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* https://coolors.co/000000-c8c5c1-065a82-82c3fb-8c5f66 */
+#pg1 {
+  background: url(../static/programming-1873854_1920.png) repeat-y center
+    center/cover;
+  color: white;
+
+  background-attachment: fixed;
+}
+#pg2 {
+  /* background: #f2f7f2; */
+  background: url(../static/purdue.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+#pg3 {
+  background: #065a82;
+  /* background: url(../static/canyon.jpeg) no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#pg4 {
+  /* background: #187795; */
+  background: url(../static/canyon.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pg5 {
+  background: #8c5f66;
+  /* background: url(../static/cat.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footparent {
+  width: 100%;
+  height: 5vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footparent p {
+  font-size: 2vh;
+  color: black;
+}
+
+@media screen and (max-width: 1110px) {
+  .wrapper.pg1 {
+    box-shadow: inset 0px 0px 100px 10px #141414,
+      inset 0px 0px 100px 5px #141414;
+  }
+}
